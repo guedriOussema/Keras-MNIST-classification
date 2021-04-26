@@ -30,7 +30,7 @@ model = load_model(MODEL_PATH)
 
 
 def model_predict(img_path, model):
-    img = image.load_img(img_path, target_size=(28,28), grayscale=True, color_mode = "grayscale")
+    img = image.load_img(img_path, target_size=(28,28), grayscale=True, color_mode = "grayscale") 
 
     # Preprocessing the image
     x = image.img_to_array(img)
